@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import "nullstyle.scss";
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.flexblock {
+	padding: 50px;
+
+	&__row {
+		border:20px solid #ECE89E;
+		display:flex;
+		justify-content: flex-end;
+	}
+
+	&__column {
+		border:20px solid #5E5373;
+		flex-basis: 300px;
+		flex-grow: 0; //по умолчанию 0
+		flex-shrink: 1; // по умолчанию 1
+		// flex:0 1 300px; - сокращённая запись
+	}
+
+	&__item {
+		background-color: #18B5A4;
+		padding:50px;
+		color:#fff;
+		font-weight: 700;
+		font-size: 20px;
+	}
+}
+
+
+
+

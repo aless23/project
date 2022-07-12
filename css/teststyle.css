@@ -1,0 +1,18 @@
+.item {
+	width: 200px;
+	height: 200px;
+	background-color:black;
+	font-size: 50px;
+	display: block;
+	margin:0px auto;
+	animation: rotates 1s infinite;
+}
+
+@keyframes rotates {
+	from {
+		transform: rotateX(0deg);
+	}
+	to {
+		transform: rotateX(360deg);
+	}
+}

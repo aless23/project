@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import "nullstyle.scss";
+
+body{
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.flexblock {
+	&__row {
+		border:20px solid #EEE79F;
+		display:flex;
+		margin:0 0 20px 0;
+	}
+
+	&__column {
+		border:20px solid #5E5373;
+	}
+
+	&__element {
+		background:#18B5A4;
+		color:#fff;
+		font-size: 50px;
+		padding:50px;
+	}
+}
+
+

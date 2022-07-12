@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import "nullstyle.scss";
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+div{
+	box-sizing:border-box;
+}
+
+.intro{
+	width: 1003px;
+	margin:70px auto 0px auto;
+	color:#36c1d0;
+}
+
+.block {
+background:#36c1d0;
+width: 1000px;
+height: 600px;
+margin:60px auto;
+padding:20px;
+	&__element {
+		background:#fff;
+		width:10%;
+		height: 100px;
+		position: relative;
+		margin:6px;
+	}
+	&__element span{
+		background:#dee8fb;
+		color:#366bd0;
+		display:block;
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		text-align: center;
+		border-radius: 50%;
+		position: absolute;
+		left:50%;
+		margin-left:-20px;
+		top:50%;
+		margin-top:-20px;
+
+
+	}
+}
+/*Flexbox CSS Styling*/
+.flex-container {
+display:flex;
+}
+.flex {
+
+	&__element {
+	}
+}

@@ -1,85 +1,103 @@
-/*Обнуляющий CSS, изначально создаёт чистую структуру документа (без отступов, непонятных шрифтов и.т.д)*/
+@charset "UTF-8";
 * {
-	padding: 0;
-	margin: 0;
-	border: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 
-*,
-*:before,
-*:after {
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-:focus,
-:active {
-	outline: none;
+::focus, ::active {
+  outline: none;
 }
 
-a:focus,
-a:active {
-	outline: none;
+a:focus, a:active {
+  outline: none;
 }
 
 nav,
 footer,
 header,
 aside {
-	display: block;
+  display: block;
 }
 
-html,
-body {
-	height: 100%;
-	width: 100%;
-	font-size: 100%;
-	line-height: 1;
-	font-size: 14px;
-	-ms-text-size-adjust: 100%;
-	-moz-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
-input,
-button,
-textarea {
-	font-family: inherit;
+input, button, textarea {
+  font-family: inherit;
 }
 
 input::-ms-clear {
-	display: none;
+  display: none;
 }
+
 button {
-	cursor: pointer;
+  cursor: pointer;
 }
-a,
-a:visited {
-	text-decoration: none;
+
+a, a:visited {
+  text-decoration: none;
 }
+
 a:hover {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 ul li {
-	list-style: none;
+  list-style: none;
 }
 
 img {
-	vertical-align: top;
+  vertical-align: top;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-size: inherit;
-	font-weight: 400;
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
 }
-/* -------------------- */
-/* CTRL + / комментирует выделенный фрагмент кода */
-/* -------------------- */
 
+/*Обнуляющий CSS*/
+/*---------------------*/
+.knopka {
+  padding: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 10px;
+  letter-spacing: 2px;
+}
+
+body {
+  background-color: #343334;
+  padding: 45px 40px;
+  font-family: Roboto;
+  font-weight: normal;
+}
+
+.yellow {
+  color: yellow;
+}
+
+h1 {
+  font-size: 30px;
+  color: #fff;
+  margin: 0px 0px 10px 0px;
+}
+
+h2 {
+  color: #fff;
+  font-weight: normal;
+}
