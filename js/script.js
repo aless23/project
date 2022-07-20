@@ -1,6 +1,54 @@
 "use strict";
 
+// let a = 5,
+// 	b = a;
 
+// b = b + 5;
+// console.log(a);
+// console.log(b);
+
+const obj = {
+	a: 5,
+	b: 1,
+};
+
+const copy = obj;
+copy.a = 10;
+console.log(copy);
+
+// Массивы - структура которая содержит элементы по порядку
+
+// массив и псевдомассив имеет разницу в том: что псевдомассив не имеет методов (pop, push, foreach ... и т д)
+
+// const arr = [14, 23, 3, 1, 5, 8];
+
+// arr.sort(compareNum); // этот блок кода сортирует числа по возростанию
+// console.log(arr);
+
+// function compareNum(a, b) {
+// 	return a - b;
+// }
+
+// arr.forEach(function (item, index) {
+// 	console.log(item);
+// });
+
+// const str = prompt('', '');
+// const products = str.split(', '); // метод .split разделяет запрос на ячейки массива, в скобках указываем разделитель
+// // через который они будут выводиться на страницу
+// products.sort(); // метод .sort сортирует элементы в алфавитном порядке, как строку!
+// console.log(products.join('; ')); // метод .join склеивает запрос в строку, в скобках указываем разделитель
+// // через который они будут выводиться на страницу
+
+// for of лучше от for each  тем что в 1-м можно задать break.
+// метод который работает с концом массива
+// arr.pop(); // удаляет последний элемент из массива
+
+// arr.push(7); // добвляет последний элемент в массив
+
+// console.log(arr);
+
+// Объекты
 
 // const options = {
 // 	name: 'test',
@@ -9,15 +57,37 @@
 // 	colors: {
 // 		border: 'black',
 // 		bg: 'red',
+// 	},
+// 	makeTest: function () { //создание метода, который в дальнейшем можно вызывать через .
+// 		console.log("test");
 // 	}
 // };
 
+// options.makeTest();
+
+// const { border, bg } = options.colors; // деструктуризация
+// console.log(border);
+
+
+
+// console.log(Object.keys(options).length); //переводит объект в массив и считает их колличество
+
+// let counter = 0;
 // console.log(options);
 // цикл for in позволяет перебрать все ключи и значения объекта
 // for (let key in options) {
-// 	console.log(`Свойство ${key} имеет значение ${options[key]}`);
+// 	if (typeof (options[key]) === 'object') {
+// 		for (let i in options[key]) {
+// 			console.log(`Свойство ${i} имеет значение ${options[key][i]}`);
+// 			counter++;
+// 		}
+// 	} else {
+// 		console.log(`Свойство ${key} имеет значение ${options[key]}`);
+// 		counter++;
+// 	}
 // }
 
+// console.log(`Колличество свойств ${counter}`);
 // callback не начнёт своё исполнение до того момента пока другой код не завершится
 
 // пример использования collback
