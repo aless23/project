@@ -171,6 +171,8 @@ console.log(copy);
 // git reset --hard хеш сумма, параметр hard говорит git передвинуть ветку, даже если в рабочем каталоге или индексе
 // есть какие-то изменения
 
+// выйти из git log можно нажав: q, Q, :q, :Q, Z, z;
+
 // const category = "toys";
 
 // console.log('https://someurl.com/' + category);
